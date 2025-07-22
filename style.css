@@ -150,7 +150,95 @@ li {
 }
 
 .main {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    flex: 3;
+}
+
+.main-area {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
     background-color: #f5f5f5;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.card {
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#project {
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#Announcement {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#trend {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.trend-card {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.trend-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.trend-info .tagline {
+    color: gray;
+}
+
+.trend-info .username {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
 }
